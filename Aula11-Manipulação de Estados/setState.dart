@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My App',
-      home: MyWidget(), // Adicionando MyWidget como o widget inicial
+      home: MyWidget(),
     );
   }
 }
