@@ -32,7 +32,6 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-// Defina o Provider
 class CounterProvider extends ChangeNotifier {
   int _counter = 0;
 
@@ -44,7 +43,6 @@ class CounterProvider extends ChangeNotifier {
   }
 }
 
-// Use o Provider nas telas
 class Screen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
