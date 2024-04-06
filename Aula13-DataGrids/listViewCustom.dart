@@ -22,12 +22,11 @@ class ListViewExample extends StatefulWidget {
 
 class _ListViewExampleState extends State<ListViewExample> {
   List<String> items = ['1', '2', '3', '4', '5'];
-
-  // Método para reverter a ordem dos itens da lista
+  
   void _reverseItems() {
     setState(() {
       items = items.reversed
-          .toList(); // Atribuímos a lista revertida de volta à variável items
+          .toList(); 
     });
   }
 
