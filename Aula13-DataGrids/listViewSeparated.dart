@@ -6,7 +6,7 @@ class MyListViewSeparated extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      itemCount: 10, // Número total de itens na lista
+      itemCount: 10, 
       itemBuilder: (BuildContext context, int index) {
         return ListTile(
           title: Text('Item $index'),
