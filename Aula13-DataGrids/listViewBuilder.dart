@@ -6,12 +6,11 @@ class MyListViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 10, // Número total de itens na lista
+      itemCount: 10, 
       itemBuilder: (BuildContext context, int index) {
         return ListTile(
-          title: Text('Item $index'), // Texto do item da lista
+          title: Text('Item $index'), 
           onTap: () {
-            // Função executada quando o item é tocado
             print('Item $index foi tocado.');
           },
         );
