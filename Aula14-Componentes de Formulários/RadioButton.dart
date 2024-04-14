@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MeuApp());
+  runApp(MyApp());
 }
 
-class MeuApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Exemplo de RadioButton',
+      title: 'Exemplo de Radio Button',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
