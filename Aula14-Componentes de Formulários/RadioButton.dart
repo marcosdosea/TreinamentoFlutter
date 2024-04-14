@@ -8,7 +8,7 @@ class MeuApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Exemplo Flutter',
+      title: 'Exemplo de RadioButton',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
