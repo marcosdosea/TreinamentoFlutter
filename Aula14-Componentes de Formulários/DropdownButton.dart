@@ -23,12 +23,12 @@ class ExemploDropdownButton extends StatefulWidget {
 }
 
 class _ExemploDropdownButtonState extends State<ExemploDropdownButton> {
-  String saborPizza = 'Margherita'; // Inicialmente, o sabor da pizza é 'Margherita'
-  String mensagemSelecao = ''; // A mensagem que será exibida após a seleção
+  String saborPizza = 'Margherita';
+  String mensagemSelecao = '';
 
   void _mostrarSelecao() {
     setState(() {
-      mensagemSelecao = 'Você selecionou: $saborPizza'; // Atualiza a mensagem com o sabor escolhido
+      mensagemSelecao = 'Você selecionou: $saborPizza';
     });
   }
 
@@ -43,27 +43,27 @@ class _ExemploDropdownButtonState extends State<ExemploDropdownButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             DropdownButton<String>(
-              value: saborPizza, // Valor atual do DropdownButton
+              value: saborPizza,
               onChanged: (String? newValue) {
                 setState(() {
-                  saborPizza = newValue!; // Atualiza o sabor da pizza com a opção selecionada
+                  saborPizza = newValue!;
                 });
               },
               items: <String>['Margherita', 'Pepperoni', 'Vegetariana', 'Quatro Queijos']
                   .map<DropdownMenuItem<String>>((String value) {
                 return DropdownMenuItem<String>(
                   value: value,
-                  child: Text(value), // Exibe o texto da opção no menu suspenso
+                  child: Text(value),
                 );
               }).toList(),
             ),
             SizedBox(height: 16.0),
             ElevatedButton(
-              onPressed: _mostrarSelecao, // Quando o botão é pressionado, chama a função _mostrarSelecao
+              onPressed: _mostrarSelecao,
               child: Text('Confirmar'),
             ),
             SizedBox(height: 16.0),
-            Text(mensagemSelecao), // Exibe a mensagem de seleção
+            Text(mensagemSelecao),
           ],
         ),
       ),
